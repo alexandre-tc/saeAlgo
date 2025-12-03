@@ -1,0 +1,1162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.15.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SAE1.01: Référence du fichier include/stock.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">SAE1.01<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+   <div id="projectbrief">application de gestion de stock</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.15.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche',false);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle"><div class="title">Référence du fichier stock.h</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Fichier d'en-tête pour la gestion des avis sur les produits.  
+<a href="#details">Plus de détails...</a></p>
+
+<p><a href="stock_8h_source.html">Aller au code source de ce fichier.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:adfd5c7213f19a313cc9131de835956e5" id="r_adfd5c7213f19a313cc9131de835956e5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adfd5c7213f19a313cc9131de835956e5">fAjouterProduit</a> (int tabRef[], int tabStock[], float tabPrixU[], int tabSeuil[], int tlog, int tmax)</td></tr>
+<tr class="memdesc:adfd5c7213f19a313cc9131de835956e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ajoute un produit aux tableaux s'il n'existe pas déjà.  <br /></td></tr>
+<tr class="memitem:a8ffc9446bba69f6b5e58bccda0903e51" id="r_a8ffc9446bba69f6b5e58bccda0903e51"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8ffc9446bba69f6b5e58bccda0903e51">ajouterProduitFichier</a> (int ref, int qte, float prix, int seuil)</td></tr>
+<tr class="memdesc:a8ffc9446bba69f6b5e58bccda0903e51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ajoute un produit dans le fichier de données persistantes.  <br /></td></tr>
+<tr class="memitem:a247d5e0fe07f751b6fdb3e0b65e8b8dc" id="r_a247d5e0fe07f751b6fdb3e0b65e8b8dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a247d5e0fe07f751b6fdb3e0b65e8b8dc">fSaisieProduitAAjouter</a> (int tabRef[], int *refProduit, int *qte, float *prix, int *seuilSecu, int tlog, int *pos)</td></tr>
+<tr class="memdesc:a247d5e0fe07f751b6fdb3e0b65e8b8dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saisit un nouveau produit et calcule sa position d'insertion.  <br /></td></tr>
+<tr class="memitem:a90c2fbcca1086c94bf3f4e98f167f128" id="r_a90c2fbcca1086c94bf3f4e98f167f128"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a90c2fbcca1086c94bf3f4e98f167f128">supprimerRef</a> (int tabRef[], int tabStock[], float tabPrixU[], int tabSeuil[], int tlog)</td></tr>
+<tr class="memdesc:a90c2fbcca1086c94bf3f4e98f167f128"><td class="mdescLeft">&#160;</td><td class="mdescRight">Supprime une référence de produit des tableaux.  <br /></td></tr>
+<tr class="memitem:a400b9951754c904af7b79ebc16ab3175" id="r_a400b9951754c904af7b79ebc16ab3175"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a400b9951754c904af7b79ebc16ab3175">afficheRisqueRupt</a> (int tabRef[], int tabStock[], float tabPrixU[], int tabSeuil[], int tlog)</td></tr>
+<tr class="memdesc:a400b9951754c904af7b79ebc16ab3175"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche les produits dont le stock est sous le seuil de sécurité.  <br /></td></tr>
+<tr class="memitem:ac541ed745b9371167f807b912853b5fa" id="r_ac541ed745b9371167f807b912853b5fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac541ed745b9371167f807b912853b5fa">afficheEtatStock</a> (int tabRef[], int tabStock[], float tabPrixU[], int tabSeuil[], int tlog)</td></tr>
+<tr class="memdesc:ac541ed745b9371167f807b912853b5fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche un état détaillé du stock pour toutes les références.  <br /></td></tr>
+<tr class="memitem:ae2a27769c4a7bc8addb41c3fea92dcab" id="r_ae2a27769c4a7bc8addb41c3fea92dcab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae2a27769c4a7bc8addb41c3fea92dcab">defChoix</a> (int tabRef[], int tabStock[], float tabPrixU[], int tabSeuil[], int panier[], float prixArtPanier[], int nbArt[], int tlog, int tlogPanier, int tlogV, int tabRefV[], int tabNbArtV[], float prixArtPanierV[], int refAAjouter[], int stockAAjouter[], int seuilAAjouter[], float prixUAAjouter[])</td></tr>
+<tr class="memdesc:ae2a27769c4a7bc8addb41c3fea92dcab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Définit les choix d'articles à ajouter dans le panier.  <br /></td></tr>
+<tr class="memitem:a4d07425a10f7ef1d3e522d6081f7c3d5" id="r_a4d07425a10f7ef1d3e522d6081f7c3d5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4d07425a10f7ef1d3e522d6081f7c3d5">passerCommande</a> (int tabRef[], int tabStock[], float tabPrixU[], int panier[], float prixPanier[], int nbArticles[], int tlog, int tlogPanier)</td></tr>
+<tr class="memdesc:a4d07425a10f7ef1d3e522d6081f7c3d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Décrémente le stock selon le panier et calcule le total.  <br /></td></tr>
+<tr class="memitem:a4ed15524710a89ee425a2929417a35cf" id="r_a4ed15524710a89ee425a2929417a35cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ed15524710a89ee425a2929417a35cf">recapCommande</a> (int panier[], float prixPanier[], int nbArticles[], int tlogPanier)</td></tr>
+<tr class="memdesc:a4ed15524710a89ee425a2929417a35cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche le récapitulatif de la commande.  <br /></td></tr>
+<tr class="memitem:a347d5e167e08872d243a60f1c50f42b9" id="r_a347d5e167e08872d243a60f1c50f42b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a347d5e167e08872d243a60f1c50f42b9">historique</a> (int tabRefV[], int tabNbArtV[], float prixTotalV[], int tlogV)</td></tr>
+<tr class="memdesc:a347d5e167e08872d243a60f1c50f42b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche le menu de l'historique des ventes et gère les choix d'affichage.  <br /></td></tr>
+<tr class="memitem:af7d370db3a3305e63bd3d6e989c37aec" id="r_af7d370db3a3305e63bd3d6e989c37aec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af7d370db3a3305e63bd3d6e989c37aec">affichXComm</a> (int tabRefV[], int tabNbArtV[], float prixTotalV[], int tlogV, int n)</td></tr>
+<tr class="memdesc:af7d370db3a3305e63bd3d6e989c37aec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche les n dernières commandes de l'historique.  <br /></td></tr>
+<tr class="memitem:acb2b64d39e0ef7fd520de071e87b5aea" id="r_acb2b64d39e0ef7fd520de071e87b5aea"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acb2b64d39e0ef7fd520de071e87b5aea">saisieRefEtQuantite</a> (int *ref, int *quantite)</td></tr>
+<tr class="memdesc:acb2b64d39e0ef7fd520de071e87b5aea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saisie contrôlée de la référence et de la quantité d'un produit.  <br /></td></tr>
+<tr class="memitem:a10bcaa3617fb30fd9553071ad02bbc90" id="r_a10bcaa3617fb30fd9553071ad02bbc90"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a10bcaa3617fb30fd9553071ad02bbc90">saisiePrixEtSeuil</a> (float *prix, int *seuil)</td></tr>
+<tr class="memdesc:a10bcaa3617fb30fd9553071ad02bbc90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saisie contrôlée du prix unitaire et du seuil de sécurité d'un produit.  <br /></td></tr>
+<tr class="memitem:a4d87b5fddc5f721f2f5db565555bf1ea" id="r_a4d87b5fddc5f721f2f5db565555bf1ea"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4d87b5fddc5f721f2f5db565555bf1ea">saisieCamion</a> (int tabRef[], int tlog, int *ref, int *stock, int *seuil, float *prix, int refAAjouter[], int stockAAjouter[], int seuilAAjouter[], float prixUAAjouter[])</td></tr>
+<tr class="memdesc:a4d87b5fddc5f721f2f5db565555bf1ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saisie d'une commande à livrer par camion.  <br /></td></tr>
+<tr class="memitem:a31cee5fdb95f231d3f5bd8c39890d872" id="r_a31cee5fdb95f231d3f5bd8c39890d872"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a31cee5fdb95f231d3f5bd8c39890d872">livraisonCamion</a> (int tabRef[], int tabStock[], float tabPrixU[], int tabSeuil[], int tlog, int refAAjouter[], int stockAAjouter[], float prixUAAjouter[], int seuilAAjouter[], int tlogNvElements)</td></tr>
+<tr class="memdesc:a31cee5fdb95f231d3f5bd8c39890d872"><td class="mdescLeft">&#160;</td><td class="mdescRight">Intègre une livraison par camion dans le stock.  <br /></td></tr>
+<tr class="memitem:a4549d3a7f93ac7680bde1882e0af3c21" id="r_a4549d3a7f93ac7680bde1882e0af3c21"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4549d3a7f93ac7680bde1882e0af3c21">minMaxPrix</a> (int tabRef[], float tabPrixU[], int tlog)</td></tr>
+<tr class="memdesc:a4549d3a7f93ac7680bde1882e0af3c21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recherche et affiche le produit le plus cher ou le moins cher.  <br /></td></tr>
+<tr class="memitem:a37bc0b9d39de0c63fa5c5d28498a805b" id="r_a37bc0b9d39de0c63fa5c5d28498a805b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a37bc0b9d39de0c63fa5c5d28498a805b">affichMinMax</a> (int ref, float prix, int ifPlusCher)</td></tr>
+<tr class="memdesc:a37bc0b9d39de0c63fa5c5d28498a805b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche un produit (le plus cher ou le moins cher) avec formatage.  <br /></td></tr>
+<tr class="memitem:ad5120653a0539bb670843168c0e5b4ce" id="r_ad5120653a0539bb670843168c0e5b4ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad5120653a0539bb670843168c0e5b4ce">appliquerSoldes</a> (int tabRef[], float tabPrixU[], int tlog)</td></tr>
+<tr class="memdesc:ad5120653a0539bb670843168c0e5b4ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applique des remises sur des produits spécifiques.  <br /></td></tr>
+<tr class="memitem:a8229e0559a49ded8fade9aa1a135d202" id="r_a8229e0559a49ded8fade9aa1a135d202"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8229e0559a49ded8fade9aa1a135d202">saisieSoldes</a> (int *remise, char *choix)</td></tr>
+<tr class="memdesc:a8229e0559a49ded8fade9aa1a135d202"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saisie interactive des paramètres de remise.  <br /></td></tr>
+<tr class="memitem:a7810f49a3dd30efbcab0c39b0fe3125d" id="r_a7810f49a3dd30efbcab0c39b0fe3125d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7810f49a3dd30efbcab0c39b0fe3125d">global</a> (void)</td></tr>
+<tr class="memdesc:a7810f49a3dd30efbcab0c39b0fe3125d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lance le flux global de gestion de stock et de commandes.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Fichier d'en-tête pour la gestion des avis sur les produits. </p>
+<p>Déclarations des fonctions de gestion de stock et de commandes.</p>
+<dl class="section author"><dt>Auteur</dt><dd>Sasha Lorenc &amp; alexandre Triniol&ndash;Crozatier </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>Octobre - Novembre 2025</dd></dl>
+<p>Ce fichier contient les déclarations des fonctions pour la gestion d'un système d'avis :</p><ul>
+<li>Chargement et sauvegarde des avis depuis/vers un fichier</li>
+<li>Ajout, modification et suppression d'avis</li>
+<li>Consultation des notes minimales et maximales</li>
+<li>Interface globale de gestion des avis</li>
+</ul>
+<dl class="section author"><dt>Auteur</dt><dd>Sasha Lorenc &amp; alexandre Triniol&ndash;Crozatier </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>Octobre - Novembre 2025</dd></dl>
+<p>Ce fichier contient les prototypes de toutes les fonctions liées à la gestion du stock de produits, des commandes clients et de l'historique des ventes. </p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Documentation des fonctions</h2>
+<a id="ac541ed745b9371167f807b912853b5fa" name="ac541ed745b9371167f807b912853b5fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac541ed745b9371167f807b912853b5fa">&#9670;&#160;</a></span>afficheEtatStock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void afficheEtatStock </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tabRef</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tabStock</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>tabPrixU</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tabSeuil</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tlog</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Affiche un état détaillé du stock pour toutes les références. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tabRef</td><td>Tableau des références. </td></tr>
+    <tr><td class="paramname">tabStock</td><td>Tableau des quantités en stock. </td></tr>
+    <tr><td class="paramname">tabPrixU</td><td>Tableau des prix unitaires. </td></tr>
+    <tr><td class="paramname">tabSeuil</td><td>Tableau des seuils de sécurité. </td></tr>
+    <tr><td class="paramname">tlog</td><td>Taille logique actuelle. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a400b9951754c904af7b79ebc16ab3175" name="a400b9951754c904af7b79ebc16ab3175"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a400b9951754c904af7b79ebc16ab3175">&#9670;&#160;</a></span>afficheRisqueRupt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void afficheRisqueRupt </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tabRef</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tabStock</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>tabPrixU</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tabSeuil</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tlog</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Affiche les produits dont le stock est sous le seuil de sécurité. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tabRef</td><td>Tableau des références. </td></tr>
+    <tr><td class="paramname">tabStock</td><td>Tableau des quantités en stock. </td></tr>
+    <tr><td class="paramname">tabPrixU</td><td>Tableau des prix unitaires. </td></tr>
+    <tr><td class="paramname">tabSeuil</td><td>Tableau des seuils de sécurité. </td></tr>
+    <tr><td class="paramname">tlog</td><td>Taille logique actuelle. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a37bc0b9d39de0c63fa5c5d28498a805b" name="a37bc0b9d39de0c63fa5c5d28498a805b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37bc0b9d39de0c63fa5c5d28498a805b">&#9670;&#160;</a></span>affichMinMax()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void affichMinMax </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>ref</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>prix</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>ifPlusCher</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Affiche un produit (le plus cher ou le moins cher) avec formatage. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ref</td><td>Référence du produit à afficher </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">prix</td><td>Prix du produit à afficher </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ifPlusCher</td><td>1 pour produit le plus cher, 0 pour le moins cher</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Cette fonction affiche élégamment les informations d'un produit avec un encadrement visuel et des emojis. </p>
+
+</div>
+</div>
+<a id="af7d370db3a3305e63bd3d6e989c37aec" name="af7d370db3a3305e63bd3d6e989c37aec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7d370db3a3305e63bd3d6e989c37aec">&#9670;&#160;</a></span>affichXComm()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void affichXComm </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tabRefV</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tabNbArtV</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>prixTotalV</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tlogV</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>n</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Affiche les n dernières commandes de l'historique. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">tabRefV</td><td>Tableau des références de commandes </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tabNbArtV</td><td>Tableau des nombres d'articles par commande </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">prixTotalV</td><td>Tableau des prix totaux par commande </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tlogV</td><td>Taille logique des tableaux </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td>Nombre de commandes à afficher (les n plus récentes)</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Cette fonction affiche les n commandes les plus récentes avec un formatage tabulaire élégant. Si n est supérieur au nombre de commandes disponibles, toutes les commandes sont affichées. Les commandes sont affichées de la plus récente à la plus ancienne. </p>
+
+</div>
+</div>
+<a id="a8ffc9446bba69f6b5e58bccda0903e51" name="a8ffc9446bba69f6b5e58bccda0903e51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ffc9446bba69f6b5e58bccda0903e51">&#9670;&#160;</a></span>ajouterProduitFichier()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ajouterProduitFichier </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>ref</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>qte</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>prix</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>seuil</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ajoute un produit dans le fichier de données persistantes. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ref</td><td>Référence produit. </td></tr>
+    <tr><td class="paramname">qte</td><td>Quantité initiale en stock. </td></tr>
+    <tr><td class="paramname">prix</td><td>Prix unitaire. </td></tr>
+    <tr><td class="paramname">seuil</td><td>Seuil de sécurité. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad5120653a0539bb670843168c0e5b4ce" name="ad5120653a0539bb670843168c0e5b4ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5120653a0539bb670843168c0e5b4ce">&#9670;&#160;</a></span>appliquerSoldes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void appliquerSoldes </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tabRef</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>tabPrixU</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tlog</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Applique des remises sur des produits spécifiques. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">tabRef</td><td>Tableau des références </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">tabPrixU</td><td>Tableau des prix unitaires (modifié par les remises) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tlog</td><td>Taille logique du tableau</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Cette fonction permet d'appliquer interactivement des pourcentages de remise sur des produits spécifiques identifiés par leur référence. </p>
+
+</div>
+</div>
+<a id="ae2a27769c4a7bc8addb41c3fea92dcab" name="ae2a27769c4a7bc8addb41c3fea92dcab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2a27769c4a7bc8addb41c3fea92dcab">&#9670;&#160;</a></span>defChoix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void defChoix </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tabRef</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tabStock</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>tabPrixU</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tabSeuil</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>panier</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>prixArtPanier</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>nbArt</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tlog</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tlogPanier</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tlogV</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tabRefV</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tabNbArtV</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>prixArtPanierV</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>refAAjouter</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>stockAAjouter</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>seuilAAjouter</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>prixUAAjouter</em></span>[]&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définit les choix d'articles à ajouter dans le panier. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tabRef</td><td>Tableau des références. </td></tr>
+    <tr><td class="paramname">tabStock</td><td>Tableau des quantités en stock. </td></tr>
+    <tr><td class="paramname">tabPrixU</td><td>Tableau des prix unitaires. </td></tr>
+    <tr><td class="paramname">tabSeuil</td><td>Tableau des seuils de sécurité. </td></tr>
+    <tr><td class="paramname">panier</td><td>Tableau des références sélectionnées. </td></tr>
+    <tr><td class="paramname">prixArtPanier</td><td>Tableau des prix unitaires des articles dans le panier. </td></tr>
+    <tr><td class="paramname">nbArt</td><td>Tableau des quantités par article dans le panier. </td></tr>
+    <tr><td class="paramname">tlog</td><td>Taille logique des références. </td></tr>
+    <tr><td class="paramname">tlogPanier</td><td>Taille logique du panier. </td></tr>
+    <tr><td class="paramname">tlogV</td><td>Taille logique de l'historique des ventes. </td></tr>
+    <tr><td class="paramname">tabRefV</td><td>Tableau des références de l'historique des ventes. </td></tr>
+    <tr><td class="paramname">tabNbArtV</td><td>Tableau des quantités de l'historique des ventes. </td></tr>
+    <tr><td class="paramname">prixArtPanierV</td><td>Tableau des prix totaux de l'historique des ventes. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="adfd5c7213f19a313cc9131de835956e5" name="adfd5c7213f19a313cc9131de835956e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfd5c7213f19a313cc9131de835956e5">&#9670;&#160;</a></span>fAjouterProduit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int fAjouterProduit </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tabRef</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tabStock</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>tabPrixU</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tabSeuil</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tlog</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tmax</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ajoute un produit aux tableaux s'il n'existe pas déjà. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tabRef</td><td>Tableau des références. </td></tr>
+    <tr><td class="paramname">tabStock</td><td>Tableau des quantités en stock. </td></tr>
+    <tr><td class="paramname">tabPrixU</td><td>Tableau des prix unitaires. </td></tr>
+    <tr><td class="paramname">tabSeuil</td><td>Tableau des seuils de sécurité. </td></tr>
+    <tr><td class="paramname">tlog</td><td>Taille logique actuelle. </td></tr>
+    <tr><td class="paramname">tmax</td><td>Capacité maximale des tableaux. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Nouvelle taille logique après insertion, ou code d'erreur. </dd></dl>
+
+</div>
+</div>
+<a id="a247d5e0fe07f751b6fdb3e0b65e8b8dc" name="a247d5e0fe07f751b6fdb3e0b65e8b8dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a247d5e0fe07f751b6fdb3e0b65e8b8dc">&#9670;&#160;</a></span>fSaisieProduitAAjouter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fSaisieProduitAAjouter </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tabRef</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *</td>          <td class="paramname"><span class="paramname"><em>refProduit</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *</td>          <td class="paramname"><span class="paramname"><em>qte</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *</td>          <td class="paramname"><span class="paramname"><em>prix</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *</td>          <td class="paramname"><span class="paramname"><em>seuilSecu</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tlog</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *</td>          <td class="paramname"><span class="paramname"><em>pos</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Saisit un nouveau produit et calcule sa position d'insertion. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tabRef</td><td>Tableau des références. </td></tr>
+    <tr><td class="paramname">refProduit</td><td>Référence saisie (sortie). </td></tr>
+    <tr><td class="paramname">qte</td><td>Quantité saisie (sortie). </td></tr>
+    <tr><td class="paramname">prix</td><td>Prix unitaire saisi (sortie). </td></tr>
+    <tr><td class="paramname">seuilSecu</td><td>Seuil de sécurité saisi (sortie). </td></tr>
+    <tr><td class="paramname">tlog</td><td>Taille logique actuelle. </td></tr>
+    <tr><td class="paramname">pos</td><td>Position d'insertion calculée (sortie). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7810f49a3dd30efbcab0c39b0fe3125d" name="a7810f49a3dd30efbcab0c39b0fe3125d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7810f49a3dd30efbcab0c39b0fe3125d">&#9670;&#160;</a></span>global()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void global </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Lance le flux global de gestion de stock et de commandes. </p>
+
+</div>
+</div>
+<a id="a347d5e167e08872d243a60f1c50f42b9" name="a347d5e167e08872d243a60f1c50f42b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a347d5e167e08872d243a60f1c50f42b9">&#9670;&#160;</a></span>historique()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void historique </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tabRefV</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tabNbArtV</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>prixTotalV</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tlogV</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Affiche le menu de l'historique des ventes et gère les choix d'affichage. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tabRefV</td><td>Tableau des références vendues. </td></tr>
+    <tr><td class="paramname">tabNbArtV</td><td>Tableau des quantités vendues. </td></tr>
+    <tr><td class="paramname">prixTotalV</td><td>Tableau des prix totaux par vente. </td></tr>
+    <tr><td class="paramname">tlogV</td><td>Taille logique de l'historique. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a31cee5fdb95f231d3f5bd8c39890d872" name="a31cee5fdb95f231d3f5bd8c39890d872"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31cee5fdb95f231d3f5bd8c39890d872">&#9670;&#160;</a></span>livraisonCamion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int livraisonCamion </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tabRef</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tabStock</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>tabPrixU</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tabSeuil</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tlog</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>refAAjouter</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>stockAAjouter</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>prixUAAjouter</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>seuilAAjouter</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tlogNvElements</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Intègre une livraison par camion dans le stock. </p>
+<p>Cette fonction ajoute les produits d'une livraison par camion dans le stock principal. Pour les produits existants, elle met à jour seulement la quantité. Pour les nouveaux produits, elle les ajoute complètement au stock.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">tabRef</td><td>Tableau des références des produits </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">tabStock</td><td>Tableau des stocks des produits </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">tabPrixU</td><td>Tableau des prix unitaires des produits </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">tabSeuil</td><td>Tableau des seuils de sécurité des produits </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tlog</td><td>Taille logique actuelle des tableaux </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">refAAjouter</td><td>Tableau des références à ajouter </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">stockAAjouter</td><td>Tableau des stocks à ajouter </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">prixUAAjouter</td><td>Tableau des prix unitaires à ajouter </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">seuilAAjouter</td><td>Tableau des seuils à ajouter </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tlogNvElements</td><td>Nombre de nouveaux éléments à intégrer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>La nouvelle taille logique des tableaux, ou -2 si le tableau est plein</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>En cas de tableau plein, la fonction retourne -2 et arrête l'intégration </dd></dl>
+
+</div>
+</div>
+<a id="a4549d3a7f93ac7680bde1882e0af3c21" name="a4549d3a7f93ac7680bde1882e0af3c21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4549d3a7f93ac7680bde1882e0af3c21">&#9670;&#160;</a></span>minMaxPrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void minMaxPrix </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tabRef</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>tabPrixU</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tlog</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Recherche et affiche le produit le plus cher ou le moins cher. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">tabRef</td><td>Tableau des références </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tabPrixU</td><td>Tableau des prix unitaires </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tlog</td><td>Taille logique du tableau</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Cette fonction permet à l'utilisateur de choisir s'il veut voir le produit le plus cher ou le moins cher, puis l'affiche avec un formatage visuel. </p>
+
+</div>
+</div>
+<a id="a4d07425a10f7ef1d3e522d6081f7c3d5" name="a4d07425a10f7ef1d3e522d6081f7c3d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d07425a10f7ef1d3e522d6081f7c3d5">&#9670;&#160;</a></span>passerCommande()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int passerCommande </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tabRef</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tabStock</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>tabPrixU</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>panier</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>prixPanier</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>nbArticles</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tlog</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tlogPanier</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Décrémente le stock selon le panier et calcule le total. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tabRef</td><td>Tableau des références. </td></tr>
+    <tr><td class="paramname">tabStock</td><td>Tableau des quantités en stock. </td></tr>
+    <tr><td class="paramname">tabPrixU</td><td>Tableau des prix unitaires. </td></tr>
+    <tr><td class="paramname">panier</td><td>Tableau des références sélectionnées. </td></tr>
+    <tr><td class="paramname">prixPanier</td><td>Tableau des prix totaux par article (sortie). </td></tr>
+    <tr><td class="paramname">nbArticles</td><td>Tableau des quantités par article du panier. </td></tr>
+    <tr><td class="paramname">tlog</td><td>Taille logique des références. </td></tr>
+    <tr><td class="paramname">tlogPanier</td><td>Nombre d'articles dans le panier. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Montant total de la commande. </dd></dl>
+
+</div>
+</div>
+<a id="a4ed15524710a89ee425a2929417a35cf" name="a4ed15524710a89ee425a2929417a35cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ed15524710a89ee425a2929417a35cf">&#9670;&#160;</a></span>recapCommande()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void recapCommande </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>panier</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>prixPanier</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>nbArticles</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tlogPanier</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Affiche le récapitulatif de la commande. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">panier</td><td>Références commandées. </td></tr>
+    <tr><td class="paramname">prixPanier</td><td>Prix totaux par article. </td></tr>
+    <tr><td class="paramname">nbArticles</td><td>Quantités par article. </td></tr>
+    <tr><td class="paramname">tlogPanier</td><td>Nombre d'articles du panier. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4d87b5fddc5f721f2f5db565555bf1ea" name="a4d87b5fddc5f721f2f5db565555bf1ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d87b5fddc5f721f2f5db565555bf1ea">&#9670;&#160;</a></span>saisieCamion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int saisieCamion </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tabRef</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tlog</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *</td>          <td class="paramname"><span class="paramname"><em>ref</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *</td>          <td class="paramname"><span class="paramname"><em>stock</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *</td>          <td class="paramname"><span class="paramname"><em>seuil</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *</td>          <td class="paramname"><span class="paramname"><em>prix</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>refAAjouter</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>stockAAjouter</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>seuilAAjouter</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>prixUAAjouter</em></span>[]&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Saisie d'une commande à livrer par camion. </p>
+<p>Cette fonction permet de saisir une commande complète pour livraison par camion. Elle gère à la fois les produits existants (seulement référence et quantité) et les nouveaux produits (toutes les informations).</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">tabRef</td><td>Tableau des références des produits existants </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tlog</td><td>Taille logique du tableau des produits existants </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">ref</td><td>Pointeur vers la référence temporaire </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">stock</td><td>Pointeur vers le stock temporaire </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">seuil</td><td>Pointeur vers le seuil temporaire </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">prix</td><td>Pointeur vers le prix temporaire </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">refAAjouter</td><td>Tableau des références à ajouter </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">stockAAjouter</td><td>Tableau des stocks à ajouter </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">seuilAAjouter</td><td>Tableau des seuils à ajouter </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">prixUAAjouter</td><td>Tableau des prix unitaires à ajouter </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Le nombre de nouveaux éléments saisis</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>La fonction s'arrête si l'utilisateur saisit la référence 0 </dd></dl>
+
+</div>
+</div>
+<a id="a10bcaa3617fb30fd9553071ad02bbc90" name="a10bcaa3617fb30fd9553071ad02bbc90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10bcaa3617fb30fd9553071ad02bbc90">&#9670;&#160;</a></span>saisiePrixEtSeuil()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void saisiePrixEtSeuil </td>
+          <td>(</td>
+          <td class="paramtype">float *</td>          <td class="paramname"><span class="paramname"><em>prix</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *</td>          <td class="paramname"><span class="paramname"><em>seuil</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Saisie contrôlée du prix unitaire et du seuil de sécurité d'un produit. </p>
+<p>Cette fonction demande à l'utilisateur de saisir le prix unitaire et le seuil de sécurité d'un nouveau produit lors d'une livraison par camion. Les saisies sont validées pour éviter les valeurs négatives.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">prix</td><td>Pointeur vers la variable qui stockera le prix unitaire saisi </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">seuil</td><td>Pointeur vers la variable qui stockera le seuil de sécurité saisi</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>Les deux valeurs sont validées et doivent être positives ou nulles </dd></dl>
+<dl class="section warning"><dt>Avertissement</dt><dd>Cette fonction est destinée aux nouveaux produits uniquement </dd></dl>
+
+</div>
+</div>
+<a id="acb2b64d39e0ef7fd520de071e87b5aea" name="acb2b64d39e0ef7fd520de071e87b5aea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb2b64d39e0ef7fd520de071e87b5aea">&#9670;&#160;</a></span>saisieRefEtQuantite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int saisieRefEtQuantite </td>
+          <td>(</td>
+          <td class="paramtype">int *</td>          <td class="paramname"><span class="paramname"><em>ref</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *</td>          <td class="paramname"><span class="paramname"><em>quantite</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Saisie contrôlée de la référence et de la quantité d'un produit. </p>
+<p>Cette fonction demande à l'utilisateur de saisir la référence d'un produit et la quantité à ajouter lors d'une livraison par camion. La saisie est validée pour éviter les valeurs négatives.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">ref</td><td>Pointeur vers la variable qui stockera la référence saisie </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">quantite</td><td>Pointeur vers la variable qui stockera la quantité saisie </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>1 si la saisie est valide, 0 si l'utilisateur souhaite quitter (référence = 0), -1 si la référence est invalide (négative)</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>La fonction gère la saisie de la quantité avec validation pour éviter les valeurs négatives </dd></dl>
+
+</div>
+</div>
+<a id="a8229e0559a49ded8fade9aa1a135d202" name="a8229e0559a49ded8fade9aa1a135d202"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8229e0559a49ded8fade9aa1a135d202">&#9670;&#160;</a></span>saisieSoldes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void saisieSoldes </td>
+          <td>(</td>
+          <td class="paramtype">int *</td>          <td class="paramname"><span class="paramname"><em>remise</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *</td>          <td class="paramname"><span class="paramname"><em>choix</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Saisie interactive des paramètres de remise. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">remise</td><td>Pointeur vers le pourcentage de remise </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">choix</td><td>Pointeur vers le choix de l'utilisateur</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Cette fonction gère la saisie et la validation du pourcentage de remise et de la confirmation de l'utilisateur. </p>
+
+</div>
+</div>
+<a id="a90c2fbcca1086c94bf3f4e98f167f128" name="a90c2fbcca1086c94bf3f4e98f167f128"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90c2fbcca1086c94bf3f4e98f167f128">&#9670;&#160;</a></span>supprimerRef()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int supprimerRef </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tabRef</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tabStock</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>tabPrixU</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tabSeuil</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tlog</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Supprime une référence de produit des tableaux. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tabRef</td><td>Tableau des références. </td></tr>
+    <tr><td class="paramname">tabStock</td><td>Tableau des quantités en stock. </td></tr>
+    <tr><td class="paramname">tabPrixU</td><td>Tableau des prix unitaires. </td></tr>
+    <tr><td class="paramname">tabSeuil</td><td>Tableau des seuils de sécurité. </td></tr>
+    <tr><td class="paramname">tlog</td><td>Taille logique actuelle. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Nouvelle taille logique après suppression, ou code d'erreur. </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.15.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

@@ -1,0 +1,513 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.15.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SAE1.01: Référence du fichier include/commun.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">SAE1.01<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+   <div id="projectbrief">application de gestion de stock</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.15.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche',false);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle"><div class="title">Référence du fichier commun.h</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Déclarations des fonctions communes et utilitaires.  
+<a href="#details">Plus de détails...</a></p>
+
+<p><a href="commun_8h_source.html">Aller au code source de ce fichier.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:a1125170a46c833a36c9b22291d5e9786" id="r_a1125170a46c833a36c9b22291d5e9786"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1125170a46c833a36c9b22291d5e9786">chargement</a> (int tabRef[], int tabStock[], float tabPrixU[], int tabSeuil[], int tmax)</td></tr>
+<tr class="memdesc:a1125170a46c833a36c9b22291d5e9786"><td class="mdescLeft">&#160;</td><td class="mdescRight">Charge les données depuis les fichiers vers les tableaux mémoire.  <br /></td></tr>
+<tr class="memitem:a0d84f3b546a35b554209386662748ab1" id="r_a0d84f3b546a35b554209386662748ab1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0d84f3b546a35b554209386662748ab1">sauvegarder</a> (int tabRef[], int tabStock[], float tabPrixU[], int tabSeuil[], int tlog)</td></tr>
+<tr class="memdesc:a0d84f3b546a35b554209386662748ab1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sauvegarde les tableaux mémoire vers les fichiers persistants.  <br /></td></tr>
+<tr class="memitem:a8ac6e88a66725fecc0f6e6d9c302e7eb" id="r_a8ac6e88a66725fecc0f6e6d9c302e7eb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8ac6e88a66725fecc0f6e6d9c302e7eb">recherche</a> (int tabRef[], int tlog, int cible, int *trouve)</td></tr>
+<tr class="memdesc:a8ac6e88a66725fecc0f6e6d9c302e7eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recherche dichotomique d'une référence dans le tableau trié.  <br /></td></tr>
+<tr class="memitem:a28b2f735e8d33578723630c089198976" id="r_a28b2f735e8d33578723630c089198976"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a28b2f735e8d33578723630c089198976">decalerAGauche</a> (int tabRef[], int tabStock[], float tabPrixU[], int tabSeuil[], int tlog, int pos)</td></tr>
+<tr class="memdesc:a28b2f735e8d33578723630c089198976"><td class="mdescLeft">&#160;</td><td class="mdescRight">Décale vers la gauche les éléments des tableaux à partir d'une position.  <br /></td></tr>
+<tr class="memitem:a126064bc83113a92aff8d6519d0778ce" id="r_a126064bc83113a92aff8d6519d0778ce"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a126064bc83113a92aff8d6519d0778ce">decalerAGaucheVentes</a> (int tabRefV[], int tabNbArtV[], float prixTotalV[], int tlog, int nbSuppressions)</td></tr>
+<tr class="memdesc:a126064bc83113a92aff8d6519d0778ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Décale vers la gauche les tableaux de ventes pour supprimer les ventes les plus anciennes.  <br /></td></tr>
+<tr class="memitem:a5d671ffc936fabc97e89348360ce7c91" id="r_a5d671ffc936fabc97e89348360ce7c91"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5d671ffc936fabc97e89348360ce7c91">decalerADroite</a> (int tabRef[], int tabStock[], float tabPrixU[], int tabSeuil[], int tlog, int pos, int tmax)</td></tr>
+<tr class="memdesc:a5d671ffc936fabc97e89348360ce7c91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Décale vers la droite pour libérer une place à une position donnée.  <br /></td></tr>
+<tr class="memitem:aad9dfb0e2a6f3b7143ea11ffaaa8f835" id="r_aad9dfb0e2a6f3b7143ea11ffaaa8f835"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aad9dfb0e2a6f3b7143ea11ffaaa8f835">chargementVentes</a> (int tabRefV[], int tabNbartV[], float prixTotalV[], int tmax)</td></tr>
+<tr class="memdesc:aad9dfb0e2a6f3b7143ea11ffaaa8f835"><td class="mdescLeft">&#160;</td><td class="mdescRight">Charge uniquement les X dernières ventes depuis le fichier.  <br /></td></tr>
+<tr class="memitem:a78d707d39ff12cdc8ad6274fe28e1c32" id="r_a78d707d39ff12cdc8ad6274fe28e1c32"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a78d707d39ff12cdc8ad6274fe28e1c32">saveVentes</a> (int panier[], float prixPanier[], int nbArticles[], int tlogPanier)</td></tr>
+<tr class="memdesc:a78d707d39ff12cdc8ad6274fe28e1c32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ajoute les lignes de vente au fichier pour persistance.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Déclarations des fonctions communes et utilitaires. </p>
+<dl class="section author"><dt>Auteur</dt><dd>Sasha Lorenc &amp; alexandre Triniol&ndash;Crozatier </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>Octobre - Novembre 2025</dd></dl>
+<p>Ce fichier contient les prototypes des fonctions utilitaires communes utilisées dans toute l'application : chargement/sauvegarde, recherche, décalages. </p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Documentation des fonctions</h2>
+<a id="a1125170a46c833a36c9b22291d5e9786" name="a1125170a46c833a36c9b22291d5e9786"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1125170a46c833a36c9b22291d5e9786">&#9670;&#160;</a></span>chargement()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int chargement </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tabRef</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tabStock</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>tabPrixU</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tabSeuil</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tmax</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Charge les données depuis les fichiers vers les tableaux mémoire. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tabRef</td><td>Tableau des références produits. </td></tr>
+    <tr><td class="paramname">tabStock</td><td>Tableau des quantités en stock par référence. </td></tr>
+    <tr><td class="paramname">tabPrixU</td><td>Tableau des prix unitaires par référence. </td></tr>
+    <tr><td class="paramname">tabSeuil</td><td>Tableau des seuils de sécurité par référence. </td></tr>
+    <tr><td class="paramname">tmax</td><td>Capacité maximale des tableaux. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Taille logique après chargement (nombre d'éléments chargés), ou code d'erreur. </dd></dl>
+
+</div>
+</div>
+<a id="aad9dfb0e2a6f3b7143ea11ffaaa8f835" name="aad9dfb0e2a6f3b7143ea11ffaaa8f835"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad9dfb0e2a6f3b7143ea11ffaaa8f835">&#9670;&#160;</a></span>chargementVentes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int chargementVentes </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tabRefV</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tabNbartV</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>prixTotalV</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tmax</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Charge uniquement les X dernières ventes depuis le fichier. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tabRefV</td><td>Tableau des références vendues (sortie). </td></tr>
+    <tr><td class="paramname">tabNbartV</td><td>Tableau des quantités vendues par référence (sortie). </td></tr>
+    <tr><td class="paramname">prixTotalV</td><td>Tableau des prix totaux par ligne de vente (sortie). </td></tr>
+    <tr><td class="paramname">tmax</td><td>Nombre maximal de lignes à charger (X). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Nombre de lignes effectivement chargées, ou code négatif en cas d'erreur. </dd></dl>
+
+</div>
+</div>
+<a id="a5d671ffc936fabc97e89348360ce7c91" name="a5d671ffc936fabc97e89348360ce7c91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d671ffc936fabc97e89348360ce7c91">&#9670;&#160;</a></span>decalerADroite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void decalerADroite </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tabRef</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tabStock</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>tabPrixU</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tabSeuil</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tlog</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>pos</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tmax</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Décale vers la droite pour libérer une place à une position donnée. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tabRef</td><td>Tableau des références. </td></tr>
+    <tr><td class="paramname">tabStock</td><td>Tableau des quantités. </td></tr>
+    <tr><td class="paramname">tabPrixU</td><td>Tableau des prix unitaires. </td></tr>
+    <tr><td class="paramname">tabSeuil</td><td>Tableau des seuils de sécurité. </td></tr>
+    <tr><td class="paramname">tlog</td><td>Taille logique actuelle (sera augmentée après insertion). </td></tr>
+    <tr><td class="paramname">pos</td><td>Position à libérer. </td></tr>
+    <tr><td class="paramname">tmax</td><td>Capacité maximale des tableaux. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a28b2f735e8d33578723630c089198976" name="a28b2f735e8d33578723630c089198976"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28b2f735e8d33578723630c089198976">&#9670;&#160;</a></span>decalerAGauche()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int decalerAGauche </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tabRef</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tabStock</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>tabPrixU</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tabSeuil</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tlog</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>pos</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Décale vers la gauche les éléments des tableaux à partir d'une position. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tabRef</td><td>Tableau des références. </td></tr>
+    <tr><td class="paramname">tabStock</td><td>Tableau des quantités. </td></tr>
+    <tr><td class="paramname">tabPrixU</td><td>Tableau des prix unitaires. </td></tr>
+    <tr><td class="paramname">tabSeuil</td><td>Tableau des seuils de sécurité. </td></tr>
+    <tr><td class="paramname">tlog</td><td>Taille logique actuelle. </td></tr>
+    <tr><td class="paramname">pos</td><td>Position de départ du décalage. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Nouvelle taille logique après suppression/décalage. </dd></dl>
+
+</div>
+</div>
+<a id="a126064bc83113a92aff8d6519d0778ce" name="a126064bc83113a92aff8d6519d0778ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a126064bc83113a92aff8d6519d0778ce">&#9670;&#160;</a></span>decalerAGaucheVentes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int decalerAGaucheVentes </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tabRefV</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tabNbArtV</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>prixTotalV</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tlog</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>nbSuppressions</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Décale vers la gauche les tableaux de ventes pour supprimer les ventes les plus anciennes. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tabRefV</td><td>Tableau des références vendues. </td></tr>
+    <tr><td class="paramname">tabNbArtV</td><td>Tableau des quantités vendues. </td></tr>
+    <tr><td class="paramname">prixTotalV</td><td>Tableau des prix totaux. </td></tr>
+    <tr><td class="paramname">tlog</td><td>Taille logique actuelle. </td></tr>
+    <tr><td class="paramname">nbSuppressions</td><td>Nombre de ventes anciennes à supprimer. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Nouvelle taille logique après suppression. </dd></dl>
+
+</div>
+</div>
+<a id="a8ac6e88a66725fecc0f6e6d9c302e7eb" name="a8ac6e88a66725fecc0f6e6d9c302e7eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ac6e88a66725fecc0f6e6d9c302e7eb">&#9670;&#160;</a></span>recherche()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int recherche </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tabRef</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tlog</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>cible</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *</td>          <td class="paramname"><span class="paramname"><em>trouve</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Recherche dichotomique d'une référence dans le tableau trié. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tabRef</td><td>Tableau des références trié par ordre croissant. </td></tr>
+    <tr><td class="paramname">tlog</td><td>Taille logique du tableau. </td></tr>
+    <tr><td class="paramname">cible</td><td>Référence recherchée. </td></tr>
+    <tr><td class="paramname">trouve</td><td>Indique 1 si la référence est trouvée, 0 sinon. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Position d'insertion si non trouvé, position exacte si trouvé. </dd></dl>
+
+</div>
+</div>
+<a id="a0d84f3b546a35b554209386662748ab1" name="a0d84f3b546a35b554209386662748ab1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d84f3b546a35b554209386662748ab1">&#9670;&#160;</a></span>sauvegarder()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sauvegarder </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tabRef</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tabStock</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>tabPrixU</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tabSeuil</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tlog</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sauvegarde les tableaux mémoire vers les fichiers persistants. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tabRef</td><td>Tableau des références produits. </td></tr>
+    <tr><td class="paramname">tabStock</td><td>Tableau des quantités en stock par référence. </td></tr>
+    <tr><td class="paramname">tabPrixU</td><td>Tableau des prix unitaires par référence. </td></tr>
+    <tr><td class="paramname">tabSeuil</td><td>Tableau des seuils de sécurité par référence. </td></tr>
+    <tr><td class="paramname">tlog</td><td>Taille logique des tableaux (nombre d'éléments à sauvegarder). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>0 en cas de succès, sinon un code d'erreur. </dd></dl>
+
+</div>
+</div>
+<a id="a78d707d39ff12cdc8ad6274fe28e1c32" name="a78d707d39ff12cdc8ad6274fe28e1c32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78d707d39ff12cdc8ad6274fe28e1c32">&#9670;&#160;</a></span>saveVentes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int saveVentes </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>panier</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>prixPanier</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>nbArticles</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tlogPanier</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ajoute les lignes de vente au fichier pour persistance. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">panier</td><td>Références vendues. </td></tr>
+    <tr><td class="paramname">prixPanier</td><td>Prix total par référence. </td></tr>
+    <tr><td class="paramname">nbArticles</td><td>Quantité vendue par référence. </td></tr>
+    <tr><td class="paramname">tlogPanier</td><td>Nombre de lignes à écrire. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>0 si succès, négatif sinon. </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.15.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.15.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SAE1.01:  Fichier source de include/commun.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">SAE1.01<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+   <div id="projectbrief">application de gestion de stock</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.15.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche',false);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle"><div class="title">commun.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="commun_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keywordtype">int</span> <a class="code hl_function" href="commun_8h.html#a1125170a46c833a36c9b22291d5e9786">chargement</a>(<span class="keywordtype">int</span> tabRef[], <span class="keywordtype">int</span> tabStock[], <span class="keywordtype">float</span> tabPrixU[], <span class="keywordtype">int</span> tabSeuil[], <span class="keywordtype">int</span> tmax);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keywordtype">int</span> <a class="code hl_function" href="commun_8h.html#a0d84f3b546a35b554209386662748ab1">sauvegarder</a>(<span class="keywordtype">int</span> tabRef[], <span class="keywordtype">int</span> tabStock[], <span class="keywordtype">float</span> tabPrixU[], <span class="keywordtype">int</span> tabSeuil[], <span class="keywordtype">int</span> tlog);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keywordtype">int</span> <a class="code hl_function" href="commun_8h.html#a8ac6e88a66725fecc0f6e6d9c302e7eb">recherche</a>(<span class="keywordtype">int</span> tabRef[], <span class="keywordtype">int</span> tlog, <span class="keywordtype">int</span> cible, <span class="keywordtype">int</span> *trouve);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="keywordtype">int</span> <a class="code hl_function" href="commun_8h.html#a28b2f735e8d33578723630c089198976">decalerAGauche</a>(<span class="keywordtype">int</span> tabRef[], <span class="keywordtype">int</span> tabStock[], <span class="keywordtype">float</span> tabPrixU[], <span class="keywordtype">int</span> tabSeuil[], <span class="keywordtype">int</span> tlog, <span class="keywordtype">int</span> pos);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="keywordtype">int</span> <a class="code hl_function" href="commun_8h.html#a126064bc83113a92aff8d6519d0778ce">decalerAGaucheVentes</a>(<span class="keywordtype">int</span> tabRefV[], <span class="keywordtype">int</span> tabNbArtV[], <span class="keywordtype">float</span> prixTotalV[], <span class="keywordtype">int</span> tlog, <span class="keywordtype">int</span> nbSuppressions);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="keywordtype">void</span> <a class="code hl_function" href="commun_8h.html#a5d671ffc936fabc97e89348360ce7c91">decalerADroite</a>(<span class="keywordtype">int</span> tabRef[], <span class="keywordtype">int</span> tabStock[], <span class="keywordtype">float</span> tabPrixU[], <span class="keywordtype">int</span> tabSeuil[], <span class="keywordtype">int</span> tlog, <span class="keywordtype">int</span> pos,<span class="keywordtype">int</span> tmax);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="keywordtype">int</span> <a class="code hl_function" href="commun_8h.html#aad9dfb0e2a6f3b7143ea11ffaaa8f835">chargementVentes</a>(<span class="keywordtype">int</span> tabRefV[],<span class="keywordtype">int</span> tabNbartV[],<span class="keywordtype">float</span> prixTotalV[],<span class="keywordtype">int</span> tmax);</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="keywordtype">int</span> <a class="code hl_function" href="commun_8h.html#a78d707d39ff12cdc8ad6274fe28e1c32">saveVentes</a>(<span class="keywordtype">int</span> panier[],<span class="keywordtype">float</span> prixPanier[], <span class="keywordtype">int</span> nbArticles[],<span class="keywordtype">int</span> tlogPanier);</div>
+<div class="ttc" id="acommun_8h_html_a0d84f3b546a35b554209386662748ab1"><div class="ttname"><a href="commun_8h.html#a0d84f3b546a35b554209386662748ab1">sauvegarder</a></div><div class="ttdeci">int sauvegarder(int tabRef[], int tabStock[], float tabPrixU[], int tabSeuil[], int tlog)</div><div class="ttdoc">Sauvegarde les tableaux mémoire vers les fichiers persistants.</div><div class="ttdef"><b>Definition</b> commun.c:84</div></div>
+<div class="ttc" id="acommun_8h_html_a1125170a46c833a36c9b22291d5e9786"><div class="ttname"><a href="commun_8h.html#a1125170a46c833a36c9b22291d5e9786">chargement</a></div><div class="ttdeci">int chargement(int tabRef[], int tabStock[], float tabPrixU[], int tabSeuil[], int tmax)</div><div class="ttdoc">Charge les données depuis les fichiers vers les tableaux mémoire.</div><div class="ttdef"><b>Definition</b> commun.c:6</div></div>
+<div class="ttc" id="acommun_8h_html_a126064bc83113a92aff8d6519d0778ce"><div class="ttname"><a href="commun_8h.html#a126064bc83113a92aff8d6519d0778ce">decalerAGaucheVentes</a></div><div class="ttdeci">int decalerAGaucheVentes(int tabRefV[], int tabNbArtV[], float prixTotalV[], int tlog, int nbSuppressions)</div><div class="ttdoc">Décale vers la gauche les tableaux de ventes pour supprimer les ventes les plus anciennes.</div><div class="ttdef"><b>Definition</b> commun.c:158</div></div>
+<div class="ttc" id="acommun_8h_html_a28b2f735e8d33578723630c089198976"><div class="ttname"><a href="commun_8h.html#a28b2f735e8d33578723630c089198976">decalerAGauche</a></div><div class="ttdeci">int decalerAGauche(int tabRef[], int tabStock[], float tabPrixU[], int tabSeuil[], int tlog, int pos)</div><div class="ttdoc">Décale vers la gauche les éléments des tableaux à partir d&#39;une position.</div><div class="ttdef"><b>Definition</b> commun.c:141</div></div>
+<div class="ttc" id="acommun_8h_html_a5d671ffc936fabc97e89348360ce7c91"><div class="ttname"><a href="commun_8h.html#a5d671ffc936fabc97e89348360ce7c91">decalerADroite</a></div><div class="ttdeci">void decalerADroite(int tabRef[], int tabStock[], float tabPrixU[], int tabSeuil[], int tlog, int pos, int tmax)</div><div class="ttdoc">Décale vers la droite pour libérer une place à une position donnée.</div><div class="ttdef"><b>Definition</b> commun.c:174</div></div>
+<div class="ttc" id="acommun_8h_html_a78d707d39ff12cdc8ad6274fe28e1c32"><div class="ttname"><a href="commun_8h.html#a78d707d39ff12cdc8ad6274fe28e1c32">saveVentes</a></div><div class="ttdeci">int saveVentes(int panier[], float prixPanier[], int nbArticles[], int tlogPanier)</div><div class="ttdoc">Ajoute les lignes de vente au fichier pour persistance.</div><div class="ttdef"><b>Definition</b> commun.c:103</div></div>
+<div class="ttc" id="acommun_8h_html_a8ac6e88a66725fecc0f6e6d9c302e7eb"><div class="ttname"><a href="commun_8h.html#a8ac6e88a66725fecc0f6e6d9c302e7eb">recherche</a></div><div class="ttdeci">int recherche(int tabRef[], int tlog, int cible, int *trouve)</div><div class="ttdoc">Recherche dichotomique d&#39;une référence dans le tableau trié.</div><div class="ttdef"><b>Definition</b> commun.c:122</div></div>
+<div class="ttc" id="acommun_8h_html_aad9dfb0e2a6f3b7143ea11ffaaa8f835"><div class="ttname"><a href="commun_8h.html#aad9dfb0e2a6f3b7143ea11ffaaa8f835">chargementVentes</a></div><div class="ttdeci">int chargementVentes(int tabRefV[], int tabNbartV[], float prixTotalV[], int tmax)</div><div class="ttdoc">Charge uniquement les X dernières ventes depuis le fichier.</div><div class="ttdef"><b>Definition</b> commun.c:39</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.15.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

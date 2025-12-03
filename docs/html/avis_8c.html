@@ -1,0 +1,481 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.15.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SAE1.01: Référence du fichier src/avis.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">SAE1.01<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+   <div id="projectbrief">application de gestion de stock</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.15.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche',false);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle"><div class="title">Référence du fichier avis.c</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="stock_8h_source.html">../include/stock.h</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ad915bd25cc14118d421989bb293c9c32" id="r_ad915bd25cc14118d421989bb293c9c32"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad915bd25cc14118d421989bb293c9c32">TAVIS</a>&#160;&#160;&#160;30</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:a2d538c66d9a7130b746cf23b3a1f1a96" id="r_a2d538c66d9a7130b746cf23b3a1f1a96"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2d538c66d9a7130b746cf23b3a1f1a96">chargementAvis</a> (int tabRef[], float tabNotes[], int tmax)</td></tr>
+<tr class="memdesc:a2d538c66d9a7130b746cf23b3a1f1a96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Charge les avis depuis un fichier dans des tableaux.  <br /></td></tr>
+<tr class="memitem:a7e64a30240c8de2f360a3765ecde413e" id="r_a7e64a30240c8de2f360a3765ecde413e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7e64a30240c8de2f360a3765ecde413e">rechercheRef</a> (int tabRef[], int tlog, int ref, int *pos)</td></tr>
+<tr class="memdesc:a7e64a30240c8de2f360a3765ecde413e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recherche une référence dans le tableau d'avis.  <br /></td></tr>
+<tr class="memitem:ae1669a947fb1b75d448d83fdb0c4fa1b" id="r_ae1669a947fb1b75d448d83fdb0c4fa1b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae1669a947fb1b75d448d83fdb0c4fa1b">ajouterAvis</a> (int tabRef[], float tabNotes[], int *tlog, int tmax)</td></tr>
+<tr class="memdesc:ae1669a947fb1b75d448d83fdb0c4fa1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ajoute un nouvel avis pour une référence.  <br /></td></tr>
+<tr class="memitem:a07b252e0b37db094aef49755f09060e6" id="r_a07b252e0b37db094aef49755f09060e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a07b252e0b37db094aef49755f09060e6">afficherRefMinMax</a> (int refMin, float noteMin, int refMax, float noteMax)</td></tr>
+<tr class="memdesc:a07b252e0b37db094aef49755f09060e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche les références avec les notes minimale et maximale.  <br /></td></tr>
+<tr class="memitem:abc65215af29343302b72932f584871f6" id="r_abc65215af29343302b72932f584871f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abc65215af29343302b72932f584871f6">afficherMinMaxNotes</a> (int tabRef[], float tabNotes[], int tlog)</td></tr>
+<tr class="memdesc:abc65215af29343302b72932f584871f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trouve et affiche les notes minimale et maximale.  <br /></td></tr>
+<tr class="memitem:afa17ed3ed34cfeee3fc8bbde16f1066b" id="r_afa17ed3ed34cfeee3fc8bbde16f1066b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afa17ed3ed34cfeee3fc8bbde16f1066b">supprimerAvis</a> (int tabRef[], float tabNotes[], int *tlog)</td></tr>
+<tr class="memdesc:afa17ed3ed34cfeee3fc8bbde16f1066b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Supprime un avis existant.  <br /></td></tr>
+<tr class="memitem:aae08bc231a6e46f3bac812d9a9017228" id="r_aae08bc231a6e46f3bac812d9a9017228"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae08bc231a6e46f3bac812d9a9017228">modifierAvis</a> (int tabRef[], float tabNotes[], int tlog)</td></tr>
+<tr class="memdesc:aae08bc231a6e46f3bac812d9a9017228"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modifie la note d'un avis existant.  <br /></td></tr>
+<tr class="memitem:a197421c34864241628e2d0059ded3c46" id="r_a197421c34864241628e2d0059ded3c46"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a197421c34864241628e2d0059ded3c46">sauvegarderAvis</a> (int tabRef[], float tabNotes[], int tlog)</td></tr>
+<tr class="memdesc:a197421c34864241628e2d0059ded3c46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sauvegarde les avis dans un fichier.  <br /></td></tr>
+<tr class="memitem:a0c23a175b1b2a4d234ea1547767f0fd0" id="r_a0c23a175b1b2a4d234ea1547767f0fd0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0c23a175b1b2a4d234ea1547767f0fd0">globalAvis</a> (void)</td></tr>
+<tr class="memdesc:a0c23a175b1b2a4d234ea1547767f0fd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction principale de gestion des avis.  <br /></td></tr>
+</table>
+<a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">Documentation des macros</h2>
+<a id="ad915bd25cc14118d421989bb293c9c32" name="ad915bd25cc14118d421989bb293c9c32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad915bd25cc14118d421989bb293c9c32">&#9670;&#160;</a></span>TAVIS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TAVIS&#160;&#160;&#160;30</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Documentation des fonctions</h2>
+<a id="abc65215af29343302b72932f584871f6" name="abc65215af29343302b72932f584871f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc65215af29343302b72932f584871f6">&#9670;&#160;</a></span>afficherMinMaxNotes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void afficherMinMaxNotes </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tabRef</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>tabNotes</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tlog</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Trouve et affiche les notes minimale et maximale. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">tabRef</td><td>Tableau des références </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tabNotes</td><td>Tableau des notes </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tlog</td><td>Taille logique des tableaux</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Cette fonction parcourt les tableaux pour trouver les notes minimale et maximale et les affiche. </p>
+
+</div>
+</div>
+<a id="a07b252e0b37db094aef49755f09060e6" name="a07b252e0b37db094aef49755f09060e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07b252e0b37db094aef49755f09060e6">&#9670;&#160;</a></span>afficherRefMinMax()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void afficherRefMinMax </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>refMin</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>noteMin</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>refMax</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>noteMax</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Affiche les références avec les notes minimale et maximale. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">refMin</td><td>Référence avec la note minimale </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">noteMin</td><td>Note minimale </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">refMax</td><td>Référence avec la note maximale </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">noteMax</td><td>Note maximale</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Cette fonction affiche formaté les produits avec les notes extrêmes. </p>
+
+</div>
+</div>
+<a id="ae1669a947fb1b75d448d83fdb0c4fa1b" name="ae1669a947fb1b75d448d83fdb0c4fa1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1669a947fb1b75d448d83fdb0c4fa1b">&#9670;&#160;</a></span>ajouterAvis()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ajouterAvis </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tabRef</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>tabNotes</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *</td>          <td class="paramname"><span class="paramname"><em>tlog</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tmax</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ajoute un nouvel avis pour une référence. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">tabRef</td><td>Tableau des références (mis à jour) </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">tabNotes</td><td>Tableau des notes (mis à jour) </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">tlog</td><td>Taille logique (incrémentée si ajout réussi) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tmax</td><td>Taille maximale des tableaux</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Cette fonction permet d'ajouter un nouvel avis après vérification que la référence n'existe pas déjà et qu'il y a de la place. </p>
+
+</div>
+</div>
+<a id="a2d538c66d9a7130b746cf23b3a1f1a96" name="a2d538c66d9a7130b746cf23b3a1f1a96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d538c66d9a7130b746cf23b3a1f1a96">&#9670;&#160;</a></span>chargementAvis()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int chargementAvis </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tabRef</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>tabNotes</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tmax</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Charge les avis depuis un fichier dans des tableaux. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">tabRef</td><td>Tableau qui recevra les références des produits </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">tabNotes</td><td>Tableau qui recevra les notes des produits </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tmax</td><td>Taille maximale des tableaux </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Taille logique des tableaux remplis, -1 si erreur d'ouverture, -2 si tableau plein</dd></dl>
+<p>Cette fonction lit le fichier "data/avis.txt" et remplit les tableaux avec les références et notes des produits. </p>
+
+</div>
+</div>
+<a id="a0c23a175b1b2a4d234ea1547767f0fd0" name="a0c23a175b1b2a4d234ea1547767f0fd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c23a175b1b2a4d234ea1547767f0fd0">&#9670;&#160;</a></span>globalAvis()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void globalAvis </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction principale de gestion des avis. </p>
+<p>Cette fonction propose un menu interactif complet pour :</p><ul>
+<li>Consulter les notes min/max</li>
+<li>Ajouter un nouvel avis</li>
+<li>Supprimer un avis existant</li>
+<li>Modifier un avis existant</li>
+<li>Sauvegarder et quitter</li>
+</ul>
+<p>Elle gère le chargement initial et la sauvegarde finale des données. </p>
+
+</div>
+</div>
+<a id="aae08bc231a6e46f3bac812d9a9017228" name="aae08bc231a6e46f3bac812d9a9017228"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae08bc231a6e46f3bac812d9a9017228">&#9670;&#160;</a></span>modifierAvis()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void modifierAvis </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tabRef</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>tabNotes</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tlog</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Modifie la note d'un avis existant. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">tabRef</td><td>Tableau des références </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">tabNotes</td><td>Tableau des notes (modifié) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tlog</td><td>Taille logique des tableaux</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Cette fonction permet de modifier la note d'une référence existante. </p>
+
+</div>
+</div>
+<a id="a7e64a30240c8de2f360a3765ecde413e" name="a7e64a30240c8de2f360a3765ecde413e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e64a30240c8de2f360a3765ecde413e">&#9670;&#160;</a></span>rechercheRef()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int rechercheRef </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tabRef</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tlog</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>ref</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *</td>          <td class="paramname"><span class="paramname"><em>pos</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Recherche une référence dans le tableau d'avis. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">tabRef</td><td>Tableau des références </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tlog</td><td>Taille logique du tableau </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ref</td><td>Référence à rechercher </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">pos</td><td>Position de la référence si trouvée </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>1 si la référence est trouvée, 0 sinon</dd></dl>
+<p>Cette fonction effectue une recherche linéaire dans le tableau des références. </p>
+
+</div>
+</div>
+<a id="a197421c34864241628e2d0059ded3c46" name="a197421c34864241628e2d0059ded3c46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a197421c34864241628e2d0059ded3c46">&#9670;&#160;</a></span>sauvegarderAvis()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sauvegarderAvis </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tabRef</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>tabNotes</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tlog</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sauvegarde les avis dans un fichier. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">tabRef</td><td>Tableau des références </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tabNotes</td><td>Tableau des notes </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tlog</td><td>Taille logique des tableaux </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>0 si succès, -1 si erreur d'ouverture</dd></dl>
+<p>Cette fonction écrit tous les avis dans le fichier "data/avis.txt". </p>
+
+</div>
+</div>
+<a id="afa17ed3ed34cfeee3fc8bbde16f1066b" name="afa17ed3ed34cfeee3fc8bbde16f1066b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa17ed3ed34cfeee3fc8bbde16f1066b">&#9670;&#160;</a></span>supprimerAvis()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void supprimerAvis </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tabRef</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>tabNotes</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *</td>          <td class="paramname"><span class="paramname"><em>tlog</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Supprime un avis existant. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">tabRef</td><td>Tableau des références (mis à jour) </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">tabNotes</td><td>Tableau des notes (mis à jour) </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">tlog</td><td>Taille logique (décrémentée si suppression réussie)</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Cette fonction supprime un avis en décalant les éléments suivants dans les tableaux. </p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.15.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

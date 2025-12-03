@@ -1,0 +1,373 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.15.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SAE1.01: Référence du fichier src/affichage.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">SAE1.01<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+   <div id="projectbrief">application de gestion de stock</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.15.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche',false);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle"><div class="title">Référence du fichier affichage.c</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="affichage_8h_source.html">affichage.h</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:a7f3db509b04b31b00f287fa6b8959fad" id="r_a7f3db509b04b31b00f287fa6b8959fad"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7f3db509b04b31b00f287fa6b8959fad">menu</a> (void)</td></tr>
+<tr class="memdesc:a7f3db509b04b31b00f287fa6b8959fad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche le menu principal et retourne le choix utilisateur.  <br /></td></tr>
+<tr class="memitem:a08d8181bbbe670f68df1e0d12aa0dc0e" id="r_a08d8181bbbe670f68df1e0d12aa0dc0e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a08d8181bbbe670f68df1e0d12aa0dc0e">afficherAjoutProduit</a> ()</td></tr>
+<tr class="memdesc:a08d8181bbbe670f68df1e0d12aa0dc0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche l'écran d'ajout d'un produit.  <br /></td></tr>
+<tr class="memitem:ac23abada252c95da8b3716690338cf1c" id="r_ac23abada252c95da8b3716690338cf1c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac23abada252c95da8b3716690338cf1c">afficherEtatStock</a> ()</td></tr>
+<tr class="memdesc:ac23abada252c95da8b3716690338cf1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche l'état actuel du stock.  <br /></td></tr>
+<tr class="memitem:a2f433dc9ac6d00138d010f97eaddcc6a" id="r_a2f433dc9ac6d00138d010f97eaddcc6a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f433dc9ac6d00138d010f97eaddcc6a">afficherProduitsRisque</a> ()</td></tr>
+<tr class="memdesc:a2f433dc9ac6d00138d010f97eaddcc6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche les produits en risque de rupture.  <br /></td></tr>
+<tr class="memitem:a670cce9eef7a9a2d6dfdd2b1257c1dd7" id="r_a670cce9eef7a9a2d6dfdd2b1257c1dd7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a670cce9eef7a9a2d6dfdd2b1257c1dd7">afficherModificationDonnees</a> ()</td></tr>
+<tr class="memdesc:a670cce9eef7a9a2d6dfdd2b1257c1dd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche le menu de modification des données produit.  <br /></td></tr>
+<tr class="memitem:a453e864b23d80fa0f56f33fd93e68721" id="r_a453e864b23d80fa0f56f33fd93e68721"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a453e864b23d80fa0f56f33fd93e68721">afficherSuppressionProduit</a> ()</td></tr>
+<tr class="memdesc:a453e864b23d80fa0f56f33fd93e68721"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche l'écran de suppression d'un produit.  <br /></td></tr>
+<tr class="memitem:a19c1a998f3e4e8d549ba31a944619f7d" id="r_a19c1a998f3e4e8d549ba31a944619f7d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a19c1a998f3e4e8d549ba31a944619f7d">afficherTraitementCommande</a> ()</td></tr>
+<tr class="memdesc:a19c1a998f3e4e8d549ba31a944619f7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche l'écran de traitement de commande.  <br /></td></tr>
+<tr class="memitem:a424e8befece513a52033a5b097a42f90" id="r_a424e8befece513a52033a5b097a42f90"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a424e8befece513a52033a5b097a42f90">afficherReapprovisionnementCamion</a> ()</td></tr>
+<tr class="memdesc:a424e8befece513a52033a5b097a42f90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche le message lorsque le réapprovisionnement été sélectionné.  <br /></td></tr>
+<tr class="memitem:a3374a4980d821e2599215d06504b89db" id="r_a3374a4980d821e2599215d06504b89db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3374a4980d821e2599215d06504b89db">afficherHistoriqueVentes</a> ()</td></tr>
+<tr class="memdesc:a3374a4980d821e2599215d06504b89db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche le message de l'historique.  <br /></td></tr>
+<tr class="memitem:af7990773cca7e60251304c4f9f5ca981" id="r_af7990773cca7e60251304c4f9f5ca981"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af7990773cca7e60251304c4f9f5ca981">afficherProduitMinMax</a> ()</td></tr>
+<tr class="memdesc:af7990773cca7e60251304c4f9f5ca981"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche le message de du prix minimum et maximum.  <br /></td></tr>
+<tr class="memitem:a1e75dce5c84a79f8079a1d9979d990d7" id="r_a1e75dce5c84a79f8079a1d9979d990d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1e75dce5c84a79f8079a1d9979d990d7">afficherApplicationSoldes</a> ()</td></tr>
+<tr class="memdesc:a1e75dce5c84a79f8079a1d9979d990d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche le message de la fonctionnalité pour les soldes.  <br /></td></tr>
+<tr class="memitem:abdd799fa73d573b8895051a7a4b695bb" id="r_abdd799fa73d573b8895051a7a4b695bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abdd799fa73d573b8895051a7a4b695bb">afficherFonctionnalitesAvis</a> ()</td></tr>
+<tr class="memdesc:abdd799fa73d573b8895051a7a4b695bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche le message pour les fonctionnalités d'avis.  <br /></td></tr>
+<tr class="memitem:a7c80e48f005d9522ac4b265d8f94a225" id="r_a7c80e48f005d9522ac4b265d8f94a225"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7c80e48f005d9522ac4b265d8f94a225">afficherQuitter</a> ()</td></tr>
+<tr class="memdesc:a7c80e48f005d9522ac4b265d8f94a225"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche le message de sortie de l'application.  <br /></td></tr>
+</table>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Documentation des fonctions</h2>
+<a id="a08d8181bbbe670f68df1e0d12aa0dc0e" name="a08d8181bbbe670f68df1e0d12aa0dc0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08d8181bbbe670f68df1e0d12aa0dc0e">&#9670;&#160;</a></span>afficherAjoutProduit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void afficherAjoutProduit </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Affiche l'écran d'ajout d'un produit. </p>
+
+</div>
+</div>
+<a id="a1e75dce5c84a79f8079a1d9979d990d7" name="a1e75dce5c84a79f8079a1d9979d990d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e75dce5c84a79f8079a1d9979d990d7">&#9670;&#160;</a></span>afficherApplicationSoldes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void afficherApplicationSoldes </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Affiche le message de la fonctionnalité pour les soldes. </p>
+
+</div>
+</div>
+<a id="ac23abada252c95da8b3716690338cf1c" name="ac23abada252c95da8b3716690338cf1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac23abada252c95da8b3716690338cf1c">&#9670;&#160;</a></span>afficherEtatStock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void afficherEtatStock </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Affiche l'état actuel du stock. </p>
+
+</div>
+</div>
+<a id="abdd799fa73d573b8895051a7a4b695bb" name="abdd799fa73d573b8895051a7a4b695bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdd799fa73d573b8895051a7a4b695bb">&#9670;&#160;</a></span>afficherFonctionnalitesAvis()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void afficherFonctionnalitesAvis </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Affiche le message pour les fonctionnalités d'avis. </p>
+
+</div>
+</div>
+<a id="a3374a4980d821e2599215d06504b89db" name="a3374a4980d821e2599215d06504b89db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3374a4980d821e2599215d06504b89db">&#9670;&#160;</a></span>afficherHistoriqueVentes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void afficherHistoriqueVentes </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Affiche le message de l'historique. </p>
+
+</div>
+</div>
+<a id="a670cce9eef7a9a2d6dfdd2b1257c1dd7" name="a670cce9eef7a9a2d6dfdd2b1257c1dd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a670cce9eef7a9a2d6dfdd2b1257c1dd7">&#9670;&#160;</a></span>afficherModificationDonnees()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void afficherModificationDonnees </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Affiche le menu de modification des données produit. </p>
+
+</div>
+</div>
+<a id="af7990773cca7e60251304c4f9f5ca981" name="af7990773cca7e60251304c4f9f5ca981"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7990773cca7e60251304c4f9f5ca981">&#9670;&#160;</a></span>afficherProduitMinMax()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void afficherProduitMinMax </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Affiche le message de du prix minimum et maximum. </p>
+
+</div>
+</div>
+<a id="a2f433dc9ac6d00138d010f97eaddcc6a" name="a2f433dc9ac6d00138d010f97eaddcc6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f433dc9ac6d00138d010f97eaddcc6a">&#9670;&#160;</a></span>afficherProduitsRisque()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void afficherProduitsRisque </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Affiche les produits en risque de rupture. </p>
+
+</div>
+</div>
+<a id="a7c80e48f005d9522ac4b265d8f94a225" name="a7c80e48f005d9522ac4b265d8f94a225"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c80e48f005d9522ac4b265d8f94a225">&#9670;&#160;</a></span>afficherQuitter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void afficherQuitter </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Affiche le message de sortie de l'application. </p>
+
+</div>
+</div>
+<a id="a424e8befece513a52033a5b097a42f90" name="a424e8befece513a52033a5b097a42f90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a424e8befece513a52033a5b097a42f90">&#9670;&#160;</a></span>afficherReapprovisionnementCamion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void afficherReapprovisionnementCamion </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Affiche le message lorsque le réapprovisionnement été sélectionné. </p>
+
+</div>
+</div>
+<a id="a453e864b23d80fa0f56f33fd93e68721" name="a453e864b23d80fa0f56f33fd93e68721"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a453e864b23d80fa0f56f33fd93e68721">&#9670;&#160;</a></span>afficherSuppressionProduit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void afficherSuppressionProduit </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Affiche l'écran de suppression d'un produit. </p>
+
+</div>
+</div>
+<a id="a19c1a998f3e4e8d549ba31a944619f7d" name="a19c1a998f3e4e8d549ba31a944619f7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19c1a998f3e4e8d549ba31a944619f7d">&#9670;&#160;</a></span>afficherTraitementCommande()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void afficherTraitementCommande </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Affiche l'écran de traitement de commande. </p>
+
+</div>
+</div>
+<a id="a7f3db509b04b31b00f287fa6b8959fad" name="a7f3db509b04b31b00f287fa6b8959fad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f3db509b04b31b00f287fa6b8959fad">&#9670;&#160;</a></span>menu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int menu </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Affiche le menu principal et retourne le choix utilisateur. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>Choix saisi par l'utilisateur. </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.15.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

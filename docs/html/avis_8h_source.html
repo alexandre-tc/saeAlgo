@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.15.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SAE1.01:  Fichier source de include/avis.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">SAE1.01<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+   <div id="projectbrief">application de gestion de stock</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.15.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche',false);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle"><div class="title">avis.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="avis_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keywordtype">int</span> <a class="code hl_function" href="avis_8h.html#a2d538c66d9a7130b746cf23b3a1f1a96">chargementAvis</a>(<span class="keywordtype">int</span> tabRef[], <span class="keywordtype">float</span> tabNotes[], <span class="keywordtype">int</span> tmax);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keywordtype">int</span> <a class="code hl_function" href="avis_8h.html#a7e64a30240c8de2f360a3765ecde413e">rechercheRef</a>(<span class="keywordtype">int</span> tabRef[], <span class="keywordtype">int</span> tlog, <span class="keywordtype">int</span> ref, <span class="keywordtype">int</span> *pos);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="keywordtype">void</span> <a class="code hl_function" href="avis_8h.html#ae1669a947fb1b75d448d83fdb0c4fa1b">ajouterAvis</a>(<span class="keywordtype">int</span> tabRef[], <span class="keywordtype">float</span> tabNotes[], <span class="keywordtype">int</span> *tlog, <span class="keywordtype">int</span> tmax);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="keywordtype">void</span> <a class="code hl_function" href="avis_8h.html#a07b252e0b37db094aef49755f09060e6">afficherRefMinMax</a>(<span class="keywordtype">int</span> refMin, <span class="keywordtype">float</span> noteMin, <span class="keywordtype">int</span> refMax, <span class="keywordtype">float</span> noteMax);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="keywordtype">void</span> <a class="code hl_function" href="avis_8h.html#abc65215af29343302b72932f584871f6">afficherMinMaxNotes</a>(<span class="keywordtype">int</span> tabRef[], <span class="keywordtype">float</span> tabNotes[], <span class="keywordtype">int</span> tlog);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="keywordtype">void</span> <a class="code hl_function" href="avis_8h.html#afa17ed3ed34cfeee3fc8bbde16f1066b">supprimerAvis</a>(<span class="keywordtype">int</span> tabRef[], <span class="keywordtype">float</span> tabNotes[], <span class="keywordtype">int</span> *tlog);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="keywordtype">void</span> <a class="code hl_function" href="avis_8h.html#aae08bc231a6e46f3bac812d9a9017228">modifierAvis</a>(<span class="keywordtype">int</span> tabRef[], <span class="keywordtype">float</span> tabNotes[], <span class="keywordtype">int</span> tlog);</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="keywordtype">int</span> <a class="code hl_function" href="avis_8h.html#a197421c34864241628e2d0059ded3c46">sauvegarderAvis</a>(<span class="keywordtype">int</span> tabRef[], <span class="keywordtype">float</span> tabNotes[], <span class="keywordtype">int</span> tlog);</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="keywordtype">void</span> <a class="code hl_function" href="avis_8h.html#a0c23a175b1b2a4d234ea1547767f0fd0">globalAvis</a>(<span class="keywordtype">void</span>);</div>
+<div class="ttc" id="aavis_8h_html_a07b252e0b37db094aef49755f09060e6"><div class="ttname"><a href="avis_8h.html#a07b252e0b37db094aef49755f09060e6">afficherRefMinMax</a></div><div class="ttdeci">void afficherRefMinMax(int refMin, float noteMin, int refMax, float noteMax)</div><div class="ttdoc">Affiche les références avec les notes minimale et maximale.</div><div class="ttdef"><b>Definition</b> avis.c:95</div></div>
+<div class="ttc" id="aavis_8h_html_a0c23a175b1b2a4d234ea1547767f0fd0"><div class="ttname"><a href="avis_8h.html#a0c23a175b1b2a4d234ea1547767f0fd0">globalAvis</a></div><div class="ttdeci">void globalAvis(void)</div><div class="ttdoc">Fonction principale de gestion des avis.</div><div class="ttdef"><b>Definition</b> avis.c:199</div></div>
+<div class="ttc" id="aavis_8h_html_a197421c34864241628e2d0059ded3c46"><div class="ttname"><a href="avis_8h.html#a197421c34864241628e2d0059ded3c46">sauvegarderAvis</a></div><div class="ttdeci">int sauvegarderAvis(int tabRef[], float tabNotes[], int tlog)</div><div class="ttdoc">Sauvegarde les avis dans un fichier.</div><div class="ttdef"><b>Definition</b> avis.c:180</div></div>
+<div class="ttc" id="aavis_8h_html_a2d538c66d9a7130b746cf23b3a1f1a96"><div class="ttname"><a href="avis_8h.html#a2d538c66d9a7130b746cf23b3a1f1a96">chargementAvis</a></div><div class="ttdeci">int chargementAvis(int tabRef[], float tabNotes[], int tmax)</div><div class="ttdoc">Charge les avis depuis un fichier dans des tableaux.</div><div class="ttdef"><b>Definition</b> avis.c:9</div></div>
+<div class="ttc" id="aavis_8h_html_a7e64a30240c8de2f360a3765ecde413e"><div class="ttname"><a href="avis_8h.html#a7e64a30240c8de2f360a3765ecde413e">rechercheRef</a></div><div class="ttdeci">int rechercheRef(int tabRef[], int tlog, int ref, int *pos)</div><div class="ttdoc">Recherche une référence dans le tableau d&#39;avis.</div><div class="ttdef"><b>Definition</b> avis.c:40</div></div>
+<div class="ttc" id="aavis_8h_html_aae08bc231a6e46f3bac812d9a9017228"><div class="ttname"><a href="avis_8h.html#aae08bc231a6e46f3bac812d9a9017228">modifierAvis</a></div><div class="ttdeci">void modifierAvis(int tabRef[], float tabNotes[], int tlog)</div><div class="ttdoc">Modifie la note d&#39;un avis existant.</div><div class="ttdef"><b>Definition</b> avis.c:158</div></div>
+<div class="ttc" id="aavis_8h_html_abc65215af29343302b72932f584871f6"><div class="ttname"><a href="avis_8h.html#abc65215af29343302b72932f584871f6">afficherMinMaxNotes</a></div><div class="ttdeci">void afficherMinMaxNotes(int tabRef[], float tabNotes[], int tlog)</div><div class="ttdoc">Trouve et affiche les notes minimale et maximale.</div><div class="ttdef"><b>Definition</b> avis.c:112</div></div>
+<div class="ttc" id="aavis_8h_html_ae1669a947fb1b75d448d83fdb0c4fa1b"><div class="ttname"><a href="avis_8h.html#ae1669a947fb1b75d448d83fdb0c4fa1b">ajouterAvis</a></div><div class="ttdeci">void ajouterAvis(int tabRef[], float tabNotes[], int *tlog, int tmax)</div><div class="ttdoc">Ajoute un nouvel avis pour une référence.</div><div class="ttdef"><b>Definition</b> avis.c:55</div></div>
+<div class="ttc" id="aavis_8h_html_afa17ed3ed34cfeee3fc8bbde16f1066b"><div class="ttname"><a href="avis_8h.html#afa17ed3ed34cfeee3fc8bbde16f1066b">supprimerAvis</a></div><div class="ttdeci">void supprimerAvis(int tabRef[], float tabNotes[], int *tlog)</div><div class="ttdoc">Supprime un avis existant.</div><div class="ttdef"><b>Definition</b> avis.c:139</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.15.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

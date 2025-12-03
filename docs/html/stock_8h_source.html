@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.15.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SAE1.01:  Fichier source de include/stock.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">SAE1.01<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+   <div id="projectbrief">application de gestion de stock</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.15.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche',false);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle"><div class="title">stock.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="stock_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keywordtype">int</span> <a class="code hl_function" href="stock_8h.html#adfd5c7213f19a313cc9131de835956e5">fAjouterProduit</a>(<span class="keywordtype">int</span> tabRef[], <span class="keywordtype">int</span> tabStock[], <span class="keywordtype">float</span> tabPrixU[], <span class="keywordtype">int</span> tabSeuil[], <span class="keywordtype">int</span> tlog, <span class="keywordtype">int</span> tmax);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="stock_8h.html#a8ffc9446bba69f6b5e58bccda0903e51">   30</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="stock_8h.html#a8ffc9446bba69f6b5e58bccda0903e51">ajouterProduitFichier</a>(<span class="keywordtype">int</span> ref, <span class="keywordtype">int</span> qte, <span class="keywordtype">float</span> prix, <span class="keywordtype">int</span> seuil);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="keywordtype">void</span> <a class="code hl_function" href="stock_8h.html#a247d5e0fe07f751b6fdb3e0b65e8b8dc">fSaisieProduitAAjouter</a>(<span class="keywordtype">int</span> tabRef[], <span class="keywordtype">int</span> *refProduit, <span class="keywordtype">int</span> *qte, <span class="keywordtype">float</span> *prix, <span class="keywordtype">int</span> *seuilSecu, <span class="keywordtype">int</span> tlog, <span class="keywordtype">int</span>*pos);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="keywordtype">int</span> <a class="code hl_function" href="stock_8h.html#a90c2fbcca1086c94bf3f4e98f167f128">supprimerRef</a>(<span class="keywordtype">int</span> tabRef[], <span class="keywordtype">int</span> tabStock[], <span class="keywordtype">float</span> tabPrixU[], <span class="keywordtype">int</span> tabSeuil[], <span class="keywordtype">int</span> tlog);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="keywordtype">void</span> <a class="code hl_function" href="stock_8h.html#a400b9951754c904af7b79ebc16ab3175">afficheRisqueRupt</a>(<span class="keywordtype">int</span> tabRef[], <span class="keywordtype">int</span> tabStock[], <span class="keywordtype">float</span> tabPrixU[], <span class="keywordtype">int</span> tabSeuil[], <span class="keywordtype">int</span> tlog);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="keywordtype">void</span> <a class="code hl_function" href="stock_8h.html#ac541ed745b9371167f807b912853b5fa">afficheEtatStock</a>(<span class="keywordtype">int</span> tabRef[], <span class="keywordtype">int</span> tabStock[], <span class="keywordtype">float</span> tabPrixU[], <span class="keywordtype">int</span> tabSeuil[], <span class="keywordtype">int</span> tlog);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="keywordtype">void</span> <a class="code hl_function" href="stock_8h.html#ae2a27769c4a7bc8addb41c3fea92dcab">defChoix</a>(<span class="keywordtype">int</span> tabRef[], <span class="keywordtype">int</span> tabStock[], <span class="keywordtype">float</span> tabPrixU[], <span class="keywordtype">int</span> tabSeuil[],<span class="keywordtype">int</span> panier[],<span class="keywordtype">float</span> prixArtPanier[],<span class="keywordtype">int</span> nbArt[], <span class="keywordtype">int</span> tlog, <span class="keywordtype">int</span> tlogPanier, <span class="keywordtype">int</span> tlogV,<span class="keywordtype">int</span> tabRefV[],<span class="keywordtype">int</span> tabNbArtV[],<span class="keywordtype">float</span> prixArtPanierV[], <span class="keywordtype">int</span> refAAjouter[], <span class="keywordtype">int</span> stockAAjouter[],<span class="keywordtype">int</span> seuilAAjouter[],<span class="keywordtype">float</span> prixUAAjouter[]);</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="keywordtype">int</span> <a class="code hl_function" href="stock_8h.html#a4d07425a10f7ef1d3e522d6081f7c3d5">passerCommande</a>(<span class="keywordtype">int</span> tabRef[], <span class="keywordtype">int</span> tabStock[], <span class="keywordtype">float</span> tabPrixU[],<span class="keywordtype">int</span> panier[], <span class="keywordtype">float</span> prixPanier[], <span class="keywordtype">int</span> nbArticles[], <span class="keywordtype">int</span> tlog,<span class="keywordtype">int</span> tlogPanier);</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="keywordtype">void</span> <a class="code hl_function" href="stock_8h.html#a4ed15524710a89ee425a2929417a35cf">recapCommande</a>(<span class="keywordtype">int</span> panier[],<span class="keywordtype">float</span> prixPanier[], <span class="keywordtype">int</span> nbArticles[], <span class="keywordtype">int</span> tlogPanier);</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span></div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><span class="keywordtype">void</span> <a class="code hl_function" href="stock_8h.html#a347d5e167e08872d243a60f1c50f42b9">historique</a>(<span class="keywordtype">int</span> tabRefV[],<span class="keywordtype">int</span> tabNbArtV[],<span class="keywordtype">float</span> prixTotalV[], <span class="keywordtype">int</span> tlogV);</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span></div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="keywordtype">void</span> <a class="code hl_function" href="stock_8h.html#af7d370db3a3305e63bd3d6e989c37aec">affichXComm</a>(<span class="keywordtype">int</span> tabRefV[], <span class="keywordtype">int</span> tabNbArtV[], <span class="keywordtype">float</span> prixTotalV[], <span class="keywordtype">int</span> tlogV, <span class="keywordtype">int</span> n);</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span></div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span><span class="keywordtype">int</span> <a class="code hl_function" href="stock_8h.html#acb2b64d39e0ef7fd520de071e87b5aea">saisieRefEtQuantite</a>(<span class="keywordtype">int</span> *ref, <span class="keywordtype">int</span> *quantite);</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span></div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span><span class="keywordtype">void</span> <a class="code hl_function" href="stock_8h.html#a10bcaa3617fb30fd9553071ad02bbc90">saisiePrixEtSeuil</a>(<span class="keywordtype">float</span> *prix, <span class="keywordtype">int</span> *seuil);</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span></div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span><span class="keywordtype">int</span> <a class="code hl_function" href="stock_8h.html#a4d87b5fddc5f721f2f5db565555bf1ea">saisieCamion</a>(<span class="keywordtype">int</span> tabRef[], <span class="keywordtype">int</span> tlog, <span class="keywordtype">int</span> *ref, <span class="keywordtype">int</span> *stock, <span class="keywordtype">int</span> *seuil, <span class="keywordtype">float</span> *prix, </div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>                <span class="keywordtype">int</span> refAAjouter[], <span class="keywordtype">int</span> stockAAjouter[], <span class="keywordtype">int</span> seuilAAjouter[], <span class="keywordtype">float</span> prixUAAjouter[]);</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span></div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span><span class="keywordtype">int</span> <a class="code hl_function" href="stock_8h.html#a31cee5fdb95f231d3f5bd8c39890d872">livraisonCamion</a>(<span class="keywordtype">int</span> tabRef[], <span class="keywordtype">int</span> tabStock[], <span class="keywordtype">float</span> tabPrixU[], <span class="keywordtype">int</span> tabSeuil[], <span class="keywordtype">int</span> tlog,</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>                   <span class="keywordtype">int</span> refAAjouter[], <span class="keywordtype">int</span> stockAAjouter[], <span class="keywordtype">float</span> prixUAAjouter[], </div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>                   <span class="keywordtype">int</span> seuilAAjouter[], <span class="keywordtype">int</span> tlogNvElements);</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span></div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span><span class="keywordtype">void</span> <a class="code hl_function" href="stock_8h.html#a4549d3a7f93ac7680bde1882e0af3c21">minMaxPrix</a>(<span class="keywordtype">int</span> tabRef[], <span class="keywordtype">float</span> tabPrixU[], <span class="keywordtype">int</span> tlog);</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span></div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span><span class="keywordtype">void</span> <a class="code hl_function" href="stock_8h.html#a37bc0b9d39de0c63fa5c5d28498a805b">affichMinMax</a>(<span class="keywordtype">int</span> ref, <span class="keywordtype">float</span> prix, <span class="keywordtype">int</span> ifPlusCher);</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span></div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span><span class="keywordtype">void</span> <a class="code hl_function" href="stock_8h.html#ad5120653a0539bb670843168c0e5b4ce">appliquerSoldes</a>(<span class="keywordtype">int</span> tabRef[], <span class="keywordtype">float</span> tabPrixU[], <span class="keywordtype">int</span> tlog);</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span></div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span><span class="keywordtype">void</span> <a class="code hl_function" href="stock_8h.html#a8229e0559a49ded8fade9aa1a135d202">saisieSoldes</a>(<span class="keywordtype">int</span> *remise, <span class="keywordtype">char</span> *choix);</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span></div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span><span class="keywordtype">void</span> <a class="code hl_function" href="stock_8h.html#a7810f49a3dd30efbcab0c39b0fe3125d">global</a>(<span class="keywordtype">void</span>);</div>
+<div class="ttc" id="astock_8h_html_a10bcaa3617fb30fd9553071ad02bbc90"><div class="ttname"><a href="stock_8h.html#a10bcaa3617fb30fd9553071ad02bbc90">saisiePrixEtSeuil</a></div><div class="ttdeci">void saisiePrixEtSeuil(float *prix, int *seuil)</div><div class="ttdoc">Saisie contrôlée du prix unitaire et du seuil de sécurité d&#39;un produit.</div><div class="ttdef"><b>Definition</b> Stock.c:469</div></div>
+<div class="ttc" id="astock_8h_html_a247d5e0fe07f751b6fdb3e0b65e8b8dc"><div class="ttname"><a href="stock_8h.html#a247d5e0fe07f751b6fdb3e0b65e8b8dc">fSaisieProduitAAjouter</a></div><div class="ttdeci">void fSaisieProduitAAjouter(int tabRef[], int *refProduit, int *qte, float *prix, int *seuilSecu, int tlog, int *pos)</div><div class="ttdoc">Saisit un nouveau produit et calcule sa position d&#39;insertion.</div><div class="ttdef"><b>Definition</b> Stock.c:112</div></div>
+<div class="ttc" id="astock_8h_html_a31cee5fdb95f231d3f5bd8c39890d872"><div class="ttname"><a href="stock_8h.html#a31cee5fdb95f231d3f5bd8c39890d872">livraisonCamion</a></div><div class="ttdeci">int livraisonCamion(int tabRef[], int tabStock[], float tabPrixU[], int tabSeuil[], int tlog, int refAAjouter[], int stockAAjouter[], float prixUAAjouter[], int seuilAAjouter[], int tlogNvElements)</div><div class="ttdoc">Intègre une livraison par camion dans le stock.</div><div class="ttdef"><b>Definition</b> Stock.c:540</div></div>
+<div class="ttc" id="astock_8h_html_a347d5e167e08872d243a60f1c50f42b9"><div class="ttname"><a href="stock_8h.html#a347d5e167e08872d243a60f1c50f42b9">historique</a></div><div class="ttdeci">void historique(int tabRefV[], int tabNbArtV[], float prixTotalV[], int tlogV)</div><div class="ttdoc">Affiche le menu de l&#39;historique des ventes et gère les choix d&#39;affichage.</div><div class="ttdef"><b>Definition</b> Stock.c:380</div></div>
+<div class="ttc" id="astock_8h_html_a37bc0b9d39de0c63fa5c5d28498a805b"><div class="ttname"><a href="stock_8h.html#a37bc0b9d39de0c63fa5c5d28498a805b">affichMinMax</a></div><div class="ttdeci">void affichMinMax(int ref, float prix, int ifPlusCher)</div><div class="ttdoc">Affiche un produit (le plus cher ou le moins cher) avec formatage.</div><div class="ttdef"><b>Definition</b> Stock.c:617</div></div>
+<div class="ttc" id="astock_8h_html_a400b9951754c904af7b79ebc16ab3175"><div class="ttname"><a href="stock_8h.html#a400b9951754c904af7b79ebc16ab3175">afficheRisqueRupt</a></div><div class="ttdeci">void afficheRisqueRupt(int tabRef[], int tabStock[], float tabPrixU[], int tabSeuil[], int tlog)</div><div class="ttdoc">Affiche les produits dont le stock est sous le seuil de sécurité.</div><div class="ttdef"><b>Definition</b> Stock.c:214</div></div>
+<div class="ttc" id="astock_8h_html_a4549d3a7f93ac7680bde1882e0af3c21"><div class="ttname"><a href="stock_8h.html#a4549d3a7f93ac7680bde1882e0af3c21">minMaxPrix</a></div><div class="ttdeci">void minMaxPrix(int tabRef[], float tabPrixU[], int tlog)</div><div class="ttdoc">Recherche et affiche le produit le plus cher ou le moins cher.</div><div class="ttdef"><b>Definition</b> Stock.c:568</div></div>
+<div class="ttc" id="astock_8h_html_a4d07425a10f7ef1d3e522d6081f7c3d5"><div class="ttname"><a href="stock_8h.html#a4d07425a10f7ef1d3e522d6081f7c3d5">passerCommande</a></div><div class="ttdeci">int passerCommande(int tabRef[], int tabStock[], float tabPrixU[], int panier[], float prixPanier[], int nbArticles[], int tlog, int tlogPanier)</div><div class="ttdoc">Décrémente le stock selon le panier et calcule le total.</div><div class="ttdef"><b>Definition</b> Stock.c:255</div></div>
+<div class="ttc" id="astock_8h_html_a4d87b5fddc5f721f2f5db565555bf1ea"><div class="ttname"><a href="stock_8h.html#a4d87b5fddc5f721f2f5db565555bf1ea">saisieCamion</a></div><div class="ttdeci">int saisieCamion(int tabRef[], int tlog, int *ref, int *stock, int *seuil, float *prix, int refAAjouter[], int stockAAjouter[], int seuilAAjouter[], float prixUAAjouter[])</div><div class="ttdoc">Saisie d&#39;une commande à livrer par camion.</div><div class="ttdef"><b>Definition</b> Stock.c:485</div></div>
+<div class="ttc" id="astock_8h_html_a4ed15524710a89ee425a2929417a35cf"><div class="ttname"><a href="stock_8h.html#a4ed15524710a89ee425a2929417a35cf">recapCommande</a></div><div class="ttdeci">void recapCommande(int panier[], float prixPanier[], int nbArticles[], int tlogPanier)</div><div class="ttdoc">Affiche le récapitulatif de la commande.</div><div class="ttdef"><b>Definition</b> Stock.c:353</div></div>
+<div class="ttc" id="astock_8h_html_a7810f49a3dd30efbcab0c39b0fe3125d"><div class="ttname"><a href="stock_8h.html#a7810f49a3dd30efbcab0c39b0fe3125d">global</a></div><div class="ttdeci">void global(void)</div><div class="ttdoc">Lance le flux global de gestion de stock et de commandes.</div><div class="ttdef"><b>Definition</b> Stock.c:684</div></div>
+<div class="ttc" id="astock_8h_html_a8229e0559a49ded8fade9aa1a135d202"><div class="ttname"><a href="stock_8h.html#a8229e0559a49ded8fade9aa1a135d202">saisieSoldes</a></div><div class="ttdeci">void saisieSoldes(int *remise, char *choix)</div><div class="ttdoc">Saisie interactive des paramètres de remise.</div><div class="ttdef"><b>Definition</b> Stock.c:664</div></div>
+<div class="ttc" id="astock_8h_html_a8ffc9446bba69f6b5e58bccda0903e51"><div class="ttname"><a href="stock_8h.html#a8ffc9446bba69f6b5e58bccda0903e51">ajouterProduitFichier</a></div><div class="ttdeci">void ajouterProduitFichier(int ref, int qte, float prix, int seuil)</div><div class="ttdoc">Ajoute un produit dans le fichier de données persistantes.</div></div>
+<div class="ttc" id="astock_8h_html_a90c2fbcca1086c94bf3f4e98f167f128"><div class="ttname"><a href="stock_8h.html#a90c2fbcca1086c94bf3f4e98f167f128">supprimerRef</a></div><div class="ttdeci">int supprimerRef(int tabRef[], int tabStock[], float tabPrixU[], int tabSeuil[], int tlog)</div><div class="ttdoc">Supprime une référence de produit des tableaux.</div><div class="ttdef"><b>Definition</b> Stock.c:187</div></div>
+<div class="ttc" id="astock_8h_html_ac541ed745b9371167f807b912853b5fa"><div class="ttname"><a href="stock_8h.html#ac541ed745b9371167f807b912853b5fa">afficheEtatStock</a></div><div class="ttdeci">void afficheEtatStock(int tabRef[], int tabStock[], float tabPrixU[], int tabSeuil[], int tlog)</div><div class="ttdoc">Affiche un état détaillé du stock pour toutes les références.</div><div class="ttdef"><b>Definition</b> Stock.c:235</div></div>
+<div class="ttc" id="astock_8h_html_acb2b64d39e0ef7fd520de071e87b5aea"><div class="ttname"><a href="stock_8h.html#acb2b64d39e0ef7fd520de071e87b5aea">saisieRefEtQuantite</a></div><div class="ttdeci">int saisieRefEtQuantite(int *ref, int *quantite)</div><div class="ttdoc">Saisie contrôlée de la référence et de la quantité d&#39;un produit.</div><div class="ttdef"><b>Definition</b> Stock.c:448</div></div>
+<div class="ttc" id="astock_8h_html_ad5120653a0539bb670843168c0e5b4ce"><div class="ttname"><a href="stock_8h.html#ad5120653a0539bb670843168c0e5b4ce">appliquerSoldes</a></div><div class="ttdeci">void appliquerSoldes(int tabRef[], float tabPrixU[], int tlog)</div><div class="ttdoc">Applique des remises sur des produits spécifiques.</div><div class="ttdef"><b>Definition</b> Stock.c:637</div></div>
+<div class="ttc" id="astock_8h_html_adfd5c7213f19a313cc9131de835956e5"><div class="ttname"><a href="stock_8h.html#adfd5c7213f19a313cc9131de835956e5">fAjouterProduit</a></div><div class="ttdeci">int fAjouterProduit(int tabRef[], int tabStock[], float tabPrixU[], int tabSeuil[], int tlog, int tmax)</div><div class="ttdoc">Ajoute un produit aux tableaux s&#39;il n&#39;existe pas déjà.</div><div class="ttdef"><b>Definition</b> Stock.c:158</div></div>
+<div class="ttc" id="astock_8h_html_ae2a27769c4a7bc8addb41c3fea92dcab"><div class="ttname"><a href="stock_8h.html#ae2a27769c4a7bc8addb41c3fea92dcab">defChoix</a></div><div class="ttdeci">void defChoix(int tabRef[], int tabStock[], float tabPrixU[], int tabSeuil[], int panier[], float prixArtPanier[], int nbArt[], int tlog, int tlogPanier, int tlogV, int tabRefV[], int tabNbArtV[], float prixArtPanierV[], int refAAjouter[], int stockAAjouter[], int seuilAAjouter[], float prixUAAjouter[])</div><div class="ttdoc">Définit les choix d&#39;articles à ajouter dans le panier.</div><div class="ttdef"><b>Definition</b> Stock.c:13</div></div>
+<div class="ttc" id="astock_8h_html_af7d370db3a3305e63bd3d6e989c37aec"><div class="ttname"><a href="stock_8h.html#af7d370db3a3305e63bd3d6e989c37aec">affichXComm</a></div><div class="ttdeci">void affichXComm(int tabRefV[], int tabNbArtV[], float prixTotalV[], int tlogV, int n)</div><div class="ttdoc">Affiche les n dernières commandes de l&#39;historique.</div><div class="ttdef"><b>Definition</b> Stock.c:426</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.15.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>
