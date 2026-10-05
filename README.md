@@ -5,4 +5,4 @@
 
 ```bash
 gcc src/*.c test/*.c -Iinclude -o sae
-./exe
+./sae
