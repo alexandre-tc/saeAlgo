@@ -9,7 +9,7 @@ int chargement(int tabRef[], int tabStock[], float tabPrixU[], int tabSeuil[], i
     int ref, stock, seuil, tlog = 0;
     float prix;
 
-    fe = fopen("Data/produits.txt", "r");
+    fe = fopen("data/produits.txt", "r");
     if (fe == NULL)
     {
         printf("  ❌ ERREUR : Impossible d'ouvrir le fichier de données !\n");
@@ -42,7 +42,7 @@ int chargementVentes(int tabRefV[],int tabNbartV[],float prixTotalV[],int tmax){
     int ref,nbArt,tlog = 0;
     float prixTotal;
 
-    fe = fopen("Data/ventes.txt","r");
+    fe = fopen("data/ventes.txt","r");
     if(fe == NULL){
         printf("  ❌ ERREUR : Impossible d'ouvrir le fichier de données !\n");
         return -1;
